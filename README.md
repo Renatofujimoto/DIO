@@ -1,3 +1,3 @@
 # DIO
 Desafio DIO
-Praticando conceitos passados pela DIO de Git/GitHub
+Exercicios do Bootcamp Santander para fixação, contendo conteudo de GIT/GITHUB, CSS (flex box), JavaScript
