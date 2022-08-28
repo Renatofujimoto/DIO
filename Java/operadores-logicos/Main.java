@@ -1,23 +1,21 @@
 package operadoresLogicos;
 
+// programa para verificar quanto o funcionario deve receber de acordo com o tempo da empresa e horas trabalhadas
 public class Main {
     public static void main(String[] args){
+            int quantidadeAnos = 5;
+            int horasTrabalhadas = 40;
+            int valorHora = 50;
+            int salario = 0;
 
-    double salarioMensal = 11893.58;
-    double mediaSalario = 10500d;
+            if (quantidadeAnos <= 1) {
+                salario = 1500 + (valorHora * horasTrabalhadas);
+            } else if ((quantidadeAnos > 1) && (quantidadeAnos < 3)) {
+                salario = 2000 + (valorHora * horasTrabalhadas);
+            } else {
+                salario = 3000 + (valorHora * horasTrabalhadas);
+            }
 
-    int quantidadeDependentes = 4;
-    int mediaDependentes = 2;
-
-    System.out.println((salarioMensal < mediaSalario) && (quantidadeDependentes >= mediaDependentes));
-
-    boolean salarioBaixo = salarioMensal < mediaSalario;
-    boolean muitosDependentes = quantidadeDependentes >= mediaDependentes;
-
-    System.out.println((salarioBaixo) && (muitosDependentes));
-
-    boolean recebeAuxilio = (salarioBaixo) && (muitosDependentes);
-
-    System.out.println("Recebe o auxilio " + recebeAuxilio);
-    }
+            System.out.println("salario deve ser: " + salario);
+        }
 }
